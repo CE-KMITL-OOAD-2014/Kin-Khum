@@ -8,7 +8,7 @@
 			if(Session::get('user','error')=='error'){
 				return Redirect::to('/login');
 			}
-			else return "Admin";
+			else return Redirect::to('/index');
 
 		}
 
@@ -33,7 +33,7 @@
 			$newUser->name = Input::get('name'); 
 			$newUser->status = Input::get('status');
 			$newUser->save();
-			return 'ok';
+			return View::make('/index');
 		}
 
 
@@ -45,8 +45,8 @@
 			$usertry =  array ('username' => $usernameInput,
 								'password'=> $passwordInput);
 			echo Auth::attempt($usertry);
-			if (Auth::attempt($usertry))return Redirect::to('/');
-			else return Redirect::to('/login');
+			if (Auth::attempt($usertry))return View::make('/index2');
+			else return View::make('/login');
 
 			/*if(Session::get('user','error')=='error'){
 				

@@ -14,6 +14,9 @@ Route::get('/',function(){
 	return View::make('index');
 });
 
+Route::get('/index',function(){
+	return View::make('index2');
+});
 //Route::get('/','LoginController@loginConnect'); -<------ ตรงนี้ อย่าเอาออก
 
 Route::post('/willLogin','LoginController@login');
@@ -24,11 +27,11 @@ Route::get('/login',function(){
 });
 //Route::post('/login','LoginController@login');'
 
-Route::get('/register',function(){
+Route::post('/register',function(){
 	return View::make('Register1');
 });
 
-Route::post('/willRegister','LoginController@register');
+Route::get('/willRegister','LoginController@register');
 
 //Route::get('/logout',function(){
  //Auth::logout();
@@ -43,14 +46,16 @@ Route::get('/create',function(){
 
 
 	
-//Route::get('/search',function(){
-//	return View::make('search');
-//});
+Route::post('/searchx','RestaurantController@search');
+	
+Route::get('/search',function(){
+	return View::make('search');
+});
 
 //Route::post('/',
-Route::post('/reviewRes','RestaurantController@createRestaurant');
+//Route::post('/reviewRes','RestaurantController@createRestaurant');
 
 
-Route::get('/review',function(){
-	return View::make('review');
-});
+//Route::get('/review',function(){
+//	return View::make('review');
+//});

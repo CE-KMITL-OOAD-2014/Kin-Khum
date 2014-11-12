@@ -16,10 +16,21 @@ class RestaurantController extends BaseController{
 			return 'create.blade';
 
 	}
-	public function reviewRestaurant 
+	//public function reviewRestaurant 
 
+	public function search(){
+			$searchRestaurant = Input::get('restaurant');
+			//$searchType = Input::get('type');
+
+			$search = DB::table ('restaurants')->where('detail',$searchRestaurant)->get();
+
+			return $search;
+		//find::($id);
+		
+	}
 
 } 
 
+	
 
 ?>

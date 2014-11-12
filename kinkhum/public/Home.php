@@ -64,7 +64,7 @@
             <!--</a>-->
 
 							
-					<button class="btn btn-info navbar-btn btn-sm" data-toggle="modal" data-target=".bs-example-modal-sm"><span class="glyphicon glyphicon-user"></span>Sign in</button>
+					<button class="btn btn-info navbar-btn btn-sm" data-toggle="modal" data-target=".bs-example-modal-sm"><span class="glyphicon glyphicon-user"></span>Sign ipp</button>
 					<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
 					  <div class="modal-dialog " >
 						    <div class="modal-content">
@@ -88,7 +88,7 @@
 							                </div>
 							                <div class="form-group">
 							                    
-                                  <a href="/loginss"><button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button></a>
+                                  <a href="/loginss"><button class="btn btn-lg btn-primary btn-block" type="submit">Sign ipp</button></a>
 							                    <span class="pull-right"></span><a href="/Register">Register</a>
 							                </div>
 							            </form>
