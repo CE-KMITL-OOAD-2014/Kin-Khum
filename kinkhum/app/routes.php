@@ -27,11 +27,11 @@ Route::get('/login',function(){
 });
 //Route::post('/login','LoginController@login');'
 
-Route::post('/register',function(){
+Route::get('/register',function(){
 	return View::make('Register1');
 });
 
-Route::get('/willRegister','LoginController@register');
+Route::post('/willRegister','LoginController@register');
 
 //Route::get('/logout',function(){
  //Auth::logout();
@@ -52,10 +52,16 @@ Route::get('/search',function(){
 	return View::make('search');
 });
 
-//Route::post('/',
-//Route::post('/reviewRes','RestaurantController@createRestaurant');
+
+Route::post('/reviewRes','RestaurantController@review');
+
+Route::get('/review',function(){
+	return View::make('review');
+});
 
 
-//Route::get('/review',function(){
-//	return View::make('review');
-//});
+Route::post('/uploadImg','RestaurantController@createRestaurant');
+
+Route::get('/upload',function(){
+	return View::make('upload');
+});
