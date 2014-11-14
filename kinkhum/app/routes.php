@@ -44,7 +44,7 @@ Route::get('/createRes1',function(){
 
 
 	
-Route::post('/searchx','SearchController@search');
+Route::post('/searchx','RestaurantController@search');
 	
 Route::get('/search',function(){
 	return View::make('search');

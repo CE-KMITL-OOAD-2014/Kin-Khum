@@ -112,15 +112,37 @@
 
 			}
 
-			public function search(){
-			$searchRestaurant = Input::get('restaurant');
+			public function search($restaurant){
+			
 			//$searchType = Input::get('type');
 
-			$search = DB::table('restaurants',$searchRestaurant)->where('restaurant',$searchRestaurant)->orWhere('type','like','%'.$searchRestaurant.'%')->get();
+			$search = DB::table('restaurants',$restaurant)->where('restaurant',$restaurant)->orWhere('type','like','%'.$restaurant.'%')->get();
 
-			return View::make('search',array('search'=>$search));
+			return $search;
 		//find::($id);
 		
+			}
+
+			public function getAll(){
+				$getRes = RestaurantDB::all();
+				$getRestaurant = new Restaurant();
+				$size = count($getRes)
+				for ($i=0; $i<$size ; $i++) {
+					$getRestaurant->id = $getRes[$i]->id;
+					$getRestaurant->restaurant = $getRes[$i]->restaurant ;
+					$getRestaurant->type = $getRes[$i]->type ;
+					$getRestaurant->address = $getRes[$i]->address ;
+					$getRestaurant->detail = $getRes[$i]->detail ;
+					$getRestaurant->telephone = $getRes[$i]->telephone ;
+					$getRestaurant->image = $getRes[$i]->image ;
+					$getRestaurant->vote = $getRes[$i]->vote ;
+				
+					# code...
+				}
+				
+					
+				
+
 			}
 
 		}
