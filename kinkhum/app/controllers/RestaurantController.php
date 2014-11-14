@@ -21,13 +21,17 @@ class RestaurantController extends BaseController{
 			return 'create.blade';
 
 	}
-	//public function reviewRestaurant 
+	//public function reviewRestaurant
+
+
+
 
 	public function search(){
-			$searchRestaurant = Input::get('restaurant');
+			
 			//$searchType = Input::get('type');
 
-			$search = DB::table('restaurants',$searchRestaurant)->where('restaurant',$searchRestaurant)->orWhere('type','like','%'.$searchRestaurant.'%')->get();
+		    $restaurant = new Restaurant();
+		    $search = $restaurant->search(Input::get('restaurant'));
 
 			return View::make('search',array('search'=>$search));
 		//find::($id);
