@@ -89,8 +89,23 @@
 			return 'ok';
 		}
 
+		function save(){
+			$userDB = new Userdb();
+			$userDB->username  = $this->username;
+			$userDB->password  = $this->password;
+			$userDB->name      = $this->name;
+			$userDB->status    = $this->status;
 
-	
+		}
+
+		function getById($id){
+			$userDB = Userdb::find($id);
+			$this->username = $userDB->username;
+			$this->password = $userDB->password;
+			$this->name     = $userDB->name;
+			$this->status   = $userDB->status;
+		}
+
 
 	}
 

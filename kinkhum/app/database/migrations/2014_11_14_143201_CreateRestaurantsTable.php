@@ -17,14 +17,14 @@ class CreateRestaurantsTable extends Migration {
 		
 
 			$table->increments('id');
-			$table->string('restaurant');
-			$table->string('type');
-			$table->string('address');
-			$table->string('detail');
-			$table->string('telephone');
-			$table->string('image');
-			$table->string('status');
-			$table->integer('vote');
+			$table->string('restaurant')->nullable();
+			$table->string('type')->nullable();
+			$table->string('address')->nullable();
+			$table->string('detail')->nullable();
+			$table->string('telephone')->nullable();
+			$table->string('image')->nullable();
+			$table->string('status')->nullable();
+			$table->integer('vote')->nullable();
 
 
 			

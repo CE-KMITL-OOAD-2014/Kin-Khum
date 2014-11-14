@@ -1,4 +1,4 @@
 <?php
-class Restaurantdb extends Eloquent {
-
+class RestaurantDB extends Eloquent {
+	public $table = 'restaurants';
 }

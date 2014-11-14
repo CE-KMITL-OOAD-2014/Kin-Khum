@@ -19,9 +19,7 @@ Route::get('/index',function(){
 });
 //Route::get('/','LoginController@loginConnect'); -<------ ตรงนี้ อย่าเอาออก
 
-Route::post('/willLogin','LoginController@login');
-
-
+Route::post('/login','LoginController@login');
 Route::get('/login',function(){
 	return View::make('loginss');
 });
@@ -38,25 +36,25 @@ Route::post('/willRegister','LoginController@register');
  //return Response::make('You are now logged out ');
  //});
 
-Route::post('/createRes','RestaurantController@createRestaurant');
+Route::post('/res/create','RestaurantController@createRestaurant');
 
-Route::get('/create',function(){
-	return View::make('create');
+Route::get('/createRes1',function(){
+	return View::make('createRes1');
 });
 
 
 	
-Route::post('/searchx','RestaurantController@search');
+Route::post('/searchx','SearchController@search');
 	
 Route::get('/search',function(){
 	return View::make('search');
 });
 
 
-Route::post('/reviewRes','RestaurantController@review');
+Route::get('/review','RestaurantController@review');
 
-Route::get('/review',function(){
-	return View::make('review');
+Route::get('/reviewsRes1',function(){
+	return View::make('reviewsRes1');
 });
 
 
@@ -64,4 +62,10 @@ Route::post('/uploadImg','RestaurantController@createRestaurant');
 
 Route::get('/upload',function(){
 	return View::make('upload');
+});
+
+Route::post('/res/show','RestaurantController@show');
+	
+Route::get('/show',function(){
+	return View::make('show');
 });

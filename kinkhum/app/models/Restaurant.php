@@ -15,7 +15,7 @@
 		private $image;
 
 
-		function __construct(argument)
+		function __construct()
 		{
 			# code...
 			$this->id = 'null';
@@ -74,7 +74,55 @@
 			$this->vote = $value;
 		}
 
+		function save(){
+			$resDB             = new Restaurantdb();
+			$resDB->id         = $this->id;
+			$resDB->restaurant = $this->restaurant;
+			$resDB->type       = $this->type;
+			$resDB->address    = $this->address;
+			$resDB->detail     = $this->detail;
+			$resDB->telephone  = $this->telephone;
+			$resDB->image      = $this->image;
+			$resDB->vote       = $this->vote;
+			$resDB->save();
+		}
 
-	}
 
-?>
+		/*
+			$res               = new RestaurantOO;
+			$res->getById(3);
+			
+			//---
+			
+			$res->getType()
+
+
+		*/
+			function getById($id){
+				$resDB             = RestaurantDB::find($id);
+
+				$this->id = $resDB->id ;
+				$this->restaurant = $resDB->restaurant ;
+				$this->type = $resDB->type ;
+				$this->address = $resDB->address ;
+				$this->detail = $resDB->detail ;
+				$this->telephone = $resDB->telephone ;
+				$this->image = $resDB->image ;
+				$this->vote = $resDB->vote ;
+
+			}
+
+			public function search(){
+			$searchRestaurant = Input::get('restaurant');
+			//$searchType = Input::get('type');
+
+			$search = DB::table('restaurants',$searchRestaurant)->where('restaurant',$searchRestaurant)->orWhere('type','like','%'.$searchRestaurant.'%')->get();
+
+			return View::make('search',array('search'=>$search));
+		//find::($id);
+		
+			}
+
+		}
+
+		?>

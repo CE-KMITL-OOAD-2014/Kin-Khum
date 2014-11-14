@@ -2,7 +2,7 @@
 	<html>
 			
 		<head>
-			<title>Index</title>
+			<title>Search</title>
 				<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 				<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css">
 				<script type="text/javascript" src="js/jquery.min.js"></script>
@@ -16,28 +16,9 @@
 			<div class="col-md-12"> 
 				<h2 class="page-header">Search</h2>
 					
-				<div class="col-sm-3">
-	      <!-- Left column -->
-	      <a href="#"><strong><i class="glyphicon glyphicon-wrench"></i> Tools</strong></a>  
-	      
-	      <hr>
-	      
-	      <ul class="list-unstyled">
-	        <li class="nav-header"> <a href="#" data-toggle="collapse" data-target="#userMenu">
-	          <h5>Type of Restaurant <i class="glyphicon glyphicon-chevron-down"></i></h5>
-	          </a>
-	            <ul class="list-unstyled collapse in" id="userMenu">
-	                <li><a href="#"><i class="glyphicon glyphicon-flag"></i> Transactions</a></li>
-	                <li><a href="#"><i class="glyphicon glyphicon-flag"></i> Transactions</a></li>
-	                <li><a href="#"><i class="glyphicon glyphicon-flag"></i> Transactions</a></li>
-	            
-	            </ul>
-	        </li>
-	        
-
-	      </ul>
+				
 	</div>	
-				<form action="/laravel/public/searchx" method="post">
+				<form action="/searchx" method="post">
 
 				Search: <input type="text" name="restaurant" /><br /> <br>
 

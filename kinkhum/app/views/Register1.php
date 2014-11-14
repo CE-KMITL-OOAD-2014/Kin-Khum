@@ -23,7 +23,7 @@
 
  				
 
-				<form action='/laravel/public/willRegister'class="form-horizontal" role="form"  method="POST"> 
+				<form action='/willRegister'class="form-horizontal" role="form"  method="POST"> 
 
 					<div class="form-group">
    							<label class="control-label col-md-4 col-offset-4">Name</label>

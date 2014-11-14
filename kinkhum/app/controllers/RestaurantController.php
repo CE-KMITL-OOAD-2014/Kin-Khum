@@ -6,14 +6,16 @@ class RestaurantController extends BaseController{
 
 			$newRestaurant = new Restaurant();
 			//$newId = new Id();
-			$newRestaurant->restaurant = Input::get('restaurant');
+			$newRestaurant->setRestaurant(Input::get('restaurant'));
 			//$newUser->password = Hash::make(Input::get('password'));
-			$newRestaurant->detail = Input::get('detail');
-			$newRestaurant->type = Input::get('type'); 
+			$newRestaurant->setDetail(Input::get('detail'));
+			$newRestaurant->setType(Input::get('type')); 
+			$newRestaurant->setAddress(Input::get('address'));
+			$newRestaurant->setTelephone(Input::get('telephone'));
 			$file = Input::file('restaurantImg');
 			$newfile = time().".".$file->guessExtension();
 			$newRestaurant->setImage($newfile);
-			$file->move(app_path().'/../public/image./',$newfile);
+			$file->move(app_path().'/../public/image/',$newfile);
 
 			$newRestaurant->save();
 			return 'create.blade';

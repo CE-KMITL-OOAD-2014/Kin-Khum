@@ -70,7 +70,7 @@
 							       <div class="col-md-8 col-md-offset-3" >
 							       <div class="modal-dialogs">
 							          <div class="modal-content  col-md-12  ">
-							            <form action = '/laravel/public/willLogin' class="form-signin col-md-12" role="form" method="POST">
+							            <form action = 'loginss' class="form-signin col-md-12" role="form" method="POST">
                           <form class="form col-md-12 center-block">
 
 							              
