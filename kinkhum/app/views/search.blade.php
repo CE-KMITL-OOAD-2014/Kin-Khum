@@ -30,7 +30,7 @@
 						<div class="col-xs-6 col-md-4" style="margin-left: 52;">
 
 	    			<div class="panel panel-default" style="margin-left: -60;">
-	          	 <div class="panel-heading"><a href="#" class="pull-right">View all</a> <h4>{{$restaurant->restaurant}}</h4></div>
+	          	 <div class="panel-heading"><a href="show/{{$restaurant->id}}" class="pull-right">View all</a> <h4>{{$restaurant->restaurant}}</h4></div>
 	   					<div class="panel-body">
 	            
 	             				 <div class="clearfix"></div>

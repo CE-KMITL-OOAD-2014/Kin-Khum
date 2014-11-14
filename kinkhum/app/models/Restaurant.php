@@ -99,18 +99,23 @@
 
 		*/
 			function getById($id){
-				$resDB             = RestaurantDB::find($id);
+				$resDB  = RestaurantDB::find($id);
+				$getResId = new Restaurant();
+				
 
-				$this->id = $resDB->id ;
-				$this->restaurant = $resDB->restaurant ;
-				$this->type = $resDB->type ;
-				$this->address = $resDB->address ;
-				$this->detail = $resDB->detail ;
-				$this->telephone = $resDB->telephone ;
-				$this->image = $resDB->image ;
-				$this->vote = $resDB->vote ;
+				$getResId->id = $resDB->id ;
+				$getResId->restaurant = $resDB->restaurant ;
+				$getResId->type = $resDB->type ;
+				$getResId->address = $resDB->address ;
+				$getResId->detail = $resDB->detail ;
+				$getResId->telephone = $resDB->telephone ;
+				$getResId->image = $resDB->image ;
+				$getResId->vote = $resDB->vote ;
+
+				return $getResId;
 
 			}
+
 
 			public function search($restaurant){
 			
@@ -125,9 +130,12 @@
 
 			public function getAll(){
 				$getRes = RestaurantDB::all();
-				$getRestaurant = new Restaurant();
-				$size = count($getRes)
+				$size = count($getRes);
+				$result = array();
 				for ($i=0; $i<$size ; $i++) {
+					$getRestaurant = new Restaurant();
+				
+
 					$getRestaurant->id = $getRes[$i]->id;
 					$getRestaurant->restaurant = $getRes[$i]->restaurant ;
 					$getRestaurant->type = $getRes[$i]->type ;
@@ -135,15 +143,15 @@
 					$getRestaurant->detail = $getRes[$i]->detail ;
 					$getRestaurant->telephone = $getRes[$i]->telephone ;
 					$getRestaurant->image = $getRes[$i]->image ;
-					$getRestaurant->vote = $getRes[$i]->vote ;
-				
+					$getRestaurant->vote = $getRes[$i]->vote ;		
 					# code...
+				
+					$result[$i] = $getRestaurant;
 				}
-				
-					
-				
-
+				return  $result;
 			}
+
+
 
 		}
 

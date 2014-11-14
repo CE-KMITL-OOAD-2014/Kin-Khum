@@ -64,8 +64,5 @@ Route::get('/upload',function(){
 	return View::make('upload');
 });
 
-Route::post('/res/show','RestaurantController@show');
+Route::get('/show/{id}','RestaurantController@show');
 	
-Route::get('/show',function(){
-	return View::make('show');
-});

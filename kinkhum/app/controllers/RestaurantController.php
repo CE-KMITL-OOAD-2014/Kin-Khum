@@ -39,15 +39,13 @@ class RestaurantController extends BaseController{
 	}
 
 
-	//public function review(){
-		//	$reviewRestaurant = new Review();
-		//	$reviewRestaurant = Input::get('detail');
-			//$reviewRestaurant = 
+	public  function show($id){
+		$showRes = new Restaurant();
+		$show = $showRes->getById($id);
+	
 
-			//$newVote
-
-
-//	}
+		return  View::make('show',array("show"=>$show));
+	}
 
 } 
 
