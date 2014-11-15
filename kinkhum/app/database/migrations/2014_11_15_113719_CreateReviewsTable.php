@@ -16,7 +16,7 @@ class CreateReviewsTable extends Migration {
 		Schema::create('reviews', function($table){
 		
 
-			$table->increments('idReview');
+			$table->increments('id');
 			$table->string('idRestaurant')->nullable();
 			$table->string('review')->nullable();
 			$table->string('reviewImg')->nullable();
