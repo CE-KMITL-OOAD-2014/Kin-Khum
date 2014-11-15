@@ -40,11 +40,20 @@ class RestaurantController extends BaseController{
 	public  function show($id){
 		$showRes = new Restaurant();
 		$show = $showRes->getById($id);
-	
+		$review = new Review();
+		$showReview = $review->getByRestaurant($id);
+		$imgReview = $review->getReviewImg();
 
-		return  View::make('show',array("show"=>$show));
+		return  View::make('show',array("show"=>$show ,"showReview"=>$showReview,"imgReview"=>$imgReview));
 	}
 
+	public function showAllRestaurant(){
+
+		$showAll = new Restaurant();
+		$showRes = $showAll->getAll();
+
+		return View::make('showAll',array('showRes' => $showRes));
+	}
 
 } 
 

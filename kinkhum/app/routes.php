@@ -52,7 +52,7 @@ Route::get('/search',function(){
 });
 
 
-Route::post('/res/review','ReviewController@review');
+Route::post('show/{id}/reviewsRes1','ReviewController@review');
 
 Route::get('show/{id}/reviewsRes1',function(){
 	return View::make('reviewsRes1');
@@ -66,4 +66,15 @@ Route::get('/upload',function(){
 });
 
 Route::get('/show/{id}','RestaurantController@show');
+
+
 	
+	
+Route::post('/res/showall','RestaurantController@showAllRestaurant');
+	
+/*Route::get('/showAll',function(){
+	return View::make('showAll');
+});*/
+
+Route::get('/showAll','RestaurantController@showAllRestaurant');
+

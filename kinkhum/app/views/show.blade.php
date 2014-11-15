@@ -26,23 +26,35 @@
 			<hr>
 
 			<p>ประเภทของร้านอาหาร :: {{$show->getType()}}<br>
-			ที่อยู่ :: {{$show->getAddress()}}<br>
-			เบอร์ติดต่อ :: {{$show->getTelephone()}}<br>
+				ที่อยู่ :: {{$show->getAddress()}}<br>
+				เบอร์ติดต่อ :: {{$show->getTelephone()}}<br>
 				
 			</p>
 
 			<hr>
-				<form action="/show/{{$show->getId()}}/reviewsRes1" method="get">
+			<form action="/show/{{$show->getId()}}/reviewsRes1" method="get">
 
-			 	<input type="submit" value="Review">
-			 </form>
+				<input type="submit" value="Review">
+			</form>
 
-			</div>
-
-			
 		</div>
+
+		<h4>Review</h4>
+		<hr>
 		
+		@for($i=0; $i<count($showReview); $i++)
+			<div class="panel panel-default">
+				<div class="panel-heading"><h4>Review</h4></div>
+					<div class="panel-body">
+				{{$showReview[$i]->getReview()}}<br>
+	             {{$showReview[$i]->getReviewImg()}}<br>
+	             
+			</div>
+		</div>
+		@endfor
+
 	</div>
+
 
 
 

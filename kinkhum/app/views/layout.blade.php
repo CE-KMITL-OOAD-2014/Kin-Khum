@@ -31,10 +31,10 @@
              
 
             <ul class="nav navbar-nav">
-                <li><a href="#">Restaurant Recommend</a></li>
+                <li><a href="showAll"  >Restaurant Recommend</a></li>
                 
                 <li><a href="#">Best of Restaurant</a></li>
-                <li><a href="#">Promotion</a></li>
+            
                     </ul>
   
 
