@@ -32,16 +32,16 @@
 			</p>
 
 			<hr>
+				<form action="/show/{{$show->getId()}}/reviewsRes1" method="get">
 
+			 	<input type="submit" value="Review">
+			 </form>
 
 			</div>
 
-
+			
 		</div>
-		<form action="/reviewsRes1" method="get">
-
-			 <input type="submit" value="Review">
-			 </form>
+		
 	</div>
 
 

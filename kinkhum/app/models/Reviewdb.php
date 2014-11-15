@@ -1,5 +1,5 @@
 <?php
-	class Reviewdb extends Eloquent
+	class ReviewDB extends Eloquent
 	{
-		public $table = 'review';
+		public $table = 'reviews';
 	}

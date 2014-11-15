@@ -9,13 +9,11 @@
     <h1>Review <small>Restaurant</small></h1>
   </div>
   <form action = "{{ url('res/review') }}"  method="post" enctype="multipart/form-data">
-
-    <form role="form">
      <div class="form-group">
 
 
       <label for="Create_reataurant">Detail</label><br>
-      <textarea class="form-control" rows="3" placeholder="detail"></textarea>
+      <textarea class="form-control" rows="3" placeholder="detail " name="vote"></textarea>
 
       <br>
       <label class="radio-inline">
@@ -40,15 +38,8 @@
 
       <input type="file" name="restaurantImg" />
 
-      <br><input type="submit" value="create"<br>
-
-    </div>
-  </form>
-
-</form>
-
+      <br><input type="submit" value="submit"><br>
+        </div>
+    </form>
 </div>
-
-
-
 @stop

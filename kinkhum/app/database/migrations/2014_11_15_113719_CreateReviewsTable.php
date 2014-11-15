@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateCommentsTable extends Migration {
+class CreateReviewsTable extends Migration {
 
 	/**
 	 * Run the migrations.
@@ -13,16 +13,20 @@ class CreateCommentsTable extends Migration {
 	public function up()
 	{
 		//
-		Schema::create('comments', function($table){
+		Schema::create('reviews', function($table){
+		
 
-			$table->increments('id');
-			$table->string('restaurant',99);
-			$table->string('comment',140);
-
+			$table->increments('idReview');
+			$table->string('idRestaurant')->nullable();
+			$table->string('review')->nullable();
+			$table->string('reviewImg')->nullable();
+			$table->integer('voteRes')->nullable();
 			
+
 			$table->timestamps();
 			$table->rememberToken();
 		});
+		//
 	}
 
 	/**
@@ -33,7 +37,7 @@ class CreateCommentsTable extends Migration {
 	public function down()
 	{
 		//
-		Schema::drop('comments');
+		Schema::drop('reviews');
 	}
 
 }

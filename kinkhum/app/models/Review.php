@@ -9,6 +9,7 @@
 		private $idRestaurant;
 		private $review;
 		private $reviewImg;
+		private $voteRes;
 
 
 		function __construct()
@@ -18,6 +19,7 @@
 			$this->idRestaurant = 'null';
 			$this->review = 'null';
 			$this->reviewImg = 'null';
+			$this->voteRes = 'null';
 		
 		}
 
@@ -36,6 +38,10 @@
 		
 		function getReviewImg(){
 			return $this->reviewImg;
+		}
+
+		function getvoteRes(){
+			return $this->voteRes;
 		}
 		
 		function setidReview($value){
@@ -57,61 +63,48 @@
 		}
 
 
-		function save(){
-			$reviewDB  = new Reviewdb();
-			
-			$reviewDB->idReview = $this->idReview;
-			$reviewDB->idRestaurant = $thid->idRestaurant 
-			
-			$reviewDB->review    = $this->review;
-			
-			$reviewDB->reviewImg  = $this->reviewImg ;
-			
-			$reviewDB->save();
+		function setvoteRes($value){
+			$this->voteRes = $value;
+
 		}
 
 
-			function getById($idReview){
-				$resDB  = RestaurantDB::find($idReview);
-				$getResId = new Review();
+		function save(){
+			$review  = new ReviewDB();
+			
+			$review->idReview = $this->idReview;
+			$review->idRestaurant = $this->idRestaurant ;
+			$review->review  = $this->review;			
+			$review->reviewImg  = $this->reviewImg ;
+			$review->voteRes = $this->voteRes;
+			
+			$review->save();
+		}
+
+
+
+
+
+
+
+			function getByRestaurant($idReview){
+				$reviewDB  = ReviewDB::find($idReview);
+				$size = count($reviewDB);
+				$review= array();
 				
-				$getReviewId->id = $resDB->id ;
-				$getReviewId->restaurant = $resDB->restaurant ;
-				$getReviewId->type = $resDB->type ;
-				$getReviewId->address = $resDB->address ;
-				$getReviewId->detail = $resDB->detail ;
-				$getReviewId->telephone = $resDB->telephone ;
-				$getReviewId->image = $resDB->image ;
-				$getReviewId->vote = $resDB->vote ;
-
-				return $getResId;
-
-			}
-
-
-			public function getAll(){
-				$getRes = RestaurantDB::all();
-				$size = count($getRes);
-				$result = array();
-				for ($i=0; $i<$size ; $i++) {
-					$getRestaurant = new Restaurant();
-				
-
-					$getRestaurant->id = $getRes[$i]->id;
-					$getRestaurant->restaurant = $getRes[$i]->restaurant ;
-					$getRestaurant->type = $getRes[$i]->type ;
-					$getRestaurant->address = $getRes[$i]->address ;
-					$getRestaurant->detail = $getRes[$i]->detail ;
-					$getRestaurant->telephone = $getRes[$i]->telephone ;
-					$getRestaurant->image = $getRes[$i]->image ;
-					$getRestaurant->vote = $getRes[$i]->vote ;		
-					# code...
-				
-					$result[$i] = $getRestaurant;
+				for($i=0; $i<size; $i++){
+					$reviewRestaurant->idReview = $reviewDB[$i]->idReview;
+					$reviewRestaurant->idRestaurant= $reviewDB[$i]->idRestaurant;
+					$reviewRestaurant->review = $reviewDB[$i]->review;;
+					$reviewRestaurant->reviewImg = $reviewDB[$i]->reviewImg;
+					$reviewRestaurant->voteRes = $reviewDB[$i]->voteRes;
 				}
-				return  $result;
-			}
 
+
+				$review = $reviewRestaurant;
+				return $review;
+
+			}
 
 
 		}

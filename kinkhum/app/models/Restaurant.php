@@ -28,6 +28,10 @@
 			$this->vote = 'null';
 		}
 
+		function getId(){
+			return $this->id;
+
+		}
 		function getRestaurant(){
 			return $this->restaurant;
 

@@ -44,7 +44,7 @@
 
 			$usertry =  array ('username' => $usernameInput,
 								'password'=> $passwordInput);
-			echo Auth::attempt($usertry);
+		
 			if (Auth::attempt($usertry))return View::make('/index2');
 			else return View::make('/login');
 

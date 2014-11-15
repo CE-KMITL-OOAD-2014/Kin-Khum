@@ -7,9 +7,7 @@
 			<script type="text/javascript" src="js/bootstrap.min.js"></script>
     </head>
 	<body>	
-
-            
-	   
+    
 		<nav class="navbar navbar-inverse" role="navigation">
   			<div class="container-fluid banner-padding">
   				<div class="navbar-header">

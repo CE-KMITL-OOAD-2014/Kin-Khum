@@ -44,7 +44,6 @@ Route::get('/createRes1',function(){
 
 Route::post('/createRes1','RestaurantController@createRestaurant');
 
-
 	
 Route::post('/searchx','RestaurantController@search');
 	
@@ -53,9 +52,9 @@ Route::get('/search',function(){
 });
 
 
-Route::get('/review','RestaurantController@review');
+Route::post('/res/review','ReviewController@review');
 
-Route::get('/reviewsRes1',function(){
+Route::get('show/{id}/reviewsRes1',function(){
 	return View::make('reviewsRes1');
 });
 

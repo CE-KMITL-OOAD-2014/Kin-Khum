@@ -21,7 +21,6 @@ class RestaurantController extends BaseController{
 			$newRestaurant->save();
 
 			echo "Create Success";
-
 	}
 
 
