@@ -57,46 +57,9 @@
   				<nav class="navbar-right">	
   					
   		
-							
-					<button class="btn btn-info navbar-btn btn-sm" data-toggle="modal" data-target=".bs-example-modal-sm"><span class="glyphicon glyphicon-user"></span>Sign in</button>
-					<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-					  <div class="modal-dialog " >
-						    <div class="modal-content">
-						      
-							       <div class="col-md-8 col-md-offset-3" >
-							       <div class="modal-dialogs">
-							          <div class="modal-content  col-md-12  ">
-							            <form class="form-signin col-md-12" role="form">
-                          <form action = '/laravel/public/willLogin' class="form col-md-12 center-block" method="post">
-
-							              
-							                    <center><h2 class="form-signin-heading">Please sign in</h2></center>
-							                <div class="form-group">
-							                    <input type="text" class="form-control" placeholder="Username" required autofocus>
-							                </div>
-							                <div class="form-group">
-							                    <input type="password" class="form-control" placeholder="Password" required>
-							                </div>
-							                <div class="form-group">
-							                    <label class="checkbox">
-							                <input type="checkbox" value="remember-me"> Remember me
-							                    </label>
-							                </div>
-							                <div class="form-group">
-
-							                    <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
-							                    
-							                </div>
-							            </form>
-                          </form>
-							         
-							        </div>
-							      </div>
-	    </div>
-
-    </div> <!-- /container -->
-					    </div>
-					  </div>
+					<a href="/">	
+					<button class="btn btn-info navbar-btn btn-sm" data-toggle="modal" data-target=".bs-example-modal-sm"><span class="glyphicon glyphicon-user"></span>Sign out</button></a>  
+					
 					</div>
 
   				</nav>
@@ -267,51 +230,6 @@
 
         </div>
 </div>
-
-
-        <div class="col-xs-4" style="margin-top: 30;"> 
-              <div class="well"> 
-            <form class="form-horizontal" role="form">
-              <h4>What's New</h4>
-
-                <div class="form-group" style="padding:14px;">
-                  <textarea class="form-control" placeholder="Update your status"></textarea>
-                </div>
-                <p>
-                <div class="form-group">
-                <a href="#" class="btn btn-xs btn-primary"><span class="glyphicon glyphicon-heart"></span> Favorite</a>&nbsp;
-                
-                <!--<button class="btn btn-success" type="button ">Post</button>-->
-                <input class="btn btn-success btn-sm pull-right" type="submit" value="Post">&nbsp;
-                </p>
-                </div>
-     
-        </form>
-    </div>
-</div>
-
-<div class="col-xs-4" style="margin-top: 30;"> 
-              <div class="well"> 
-            <form class="form-horizontal" role="form">
-              <h4>What's New</h4>
-
-                <div class="form-group" style="padding:14px;">
-                  <textarea class="form-control" placeholder="Update your status"></textarea>
-                </div>
-                <p>
-                <div class="form-group">
-                <a href="#" class="btn btn-xs btn-primary"><span class="glyphicon glyphicon-heart"></span> Favorite</a>&nbsp;
-                
-                <!--<button class="btn btn-success" type="button ">Post</button>-->
-                <input class="btn btn-success btn-sm pull-right" type="submit" value="Post">&nbsp;
-                </p>
-                </div>
-     
-        </form>
-    </div>
-
-  
-
 
 	</body>
 </html>
