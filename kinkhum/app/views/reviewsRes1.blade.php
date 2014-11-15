@@ -33,20 +33,18 @@
       </label>
       
 
-           <label class="radio-inline">
-          <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="5"> 5
+      <label class="radio-inline">
+        <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="5"> 5
       </label>
-        <br>
-      <input type="submit" value="create"<br>
+      <br>
+
+      <input type="file" name="restaurantImg" />
+
+      <br><input type="submit" value="create"<br>
 
     </div>
   </form>
 
-</div>
-
-<input type="file" name="restaurantImg" />
-
-<br><input type="submit" value="create"<br>
 </form>
 
 </div>

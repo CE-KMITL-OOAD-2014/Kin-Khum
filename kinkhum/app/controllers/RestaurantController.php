@@ -23,14 +23,6 @@ class RestaurantController extends BaseController{
 			echo "Create Success";
 
 	}
-	public function review(){
-		$newReview = new Restaurant();
-		$newReview->restaurant = (Input::get('restaurant'));
-		$newReview->detail = (Input::get('detail'));
-
-		return View::make();
-	}
-
 
 
 	public function search(){
