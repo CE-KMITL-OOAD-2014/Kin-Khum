@@ -275,6 +275,50 @@
 </div>
 
 
+        <div class="col-xs-4" style="margin-top: 30;"> 
+              <div class="well"> 
+            <form class="form-horizontal" role="form">
+              <h4>What's New</h4>
+
+                <div class="form-group" style="padding:14px;">
+                  <textarea class="form-control" placeholder="Update your status"></textarea>
+                </div>
+                <p>
+                <div class="form-group">
+                <a href="#" class="btn btn-xs btn-primary"><span class="glyphicon glyphicon-heart"></span> Favorite</a>&nbsp;
+                
+                <!--<button class="btn btn-success" type="button ">Post</button>-->
+                <input class="btn btn-success btn-sm pull-right" type="submit" value="Post">&nbsp;
+                </p>
+                </div>
+     
+        </form>
+    </div>
+</div>
+
+<div class="col-xs-4" style="margin-top: 30;"> 
+              <div class="well"> 
+            <form class="form-horizontal" role="form">
+              <h4>What's New</h4>
+
+                <div class="form-group" style="padding:14px;">
+                  <textarea class="form-control" placeholder="Update your status"></textarea>
+                </div>
+                <p>
+                <div class="form-group">
+                <a href="#" class="btn btn-xs btn-primary"><span class="glyphicon glyphicon-heart"></span> Favorite</a>&nbsp;
+                
+                <!--<button class="btn btn-success" type="button ">Post</button>-->
+                <input class="btn btn-success btn-sm pull-right" type="submit" value="Post">&nbsp;
+                </p>
+                </div>
+     
+        </form>
+    </div>
+
+
+
+
 	</body>
 </html>
 
