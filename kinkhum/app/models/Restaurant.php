@@ -76,7 +76,7 @@
 
 		function save(){
 			$resDB             = new Restaurantdb();
-			$resDB->id         = $this->id;
+			//$resDB->id         = $this->id;
 			$resDB->restaurant = $this->restaurant;
 			$resDB->type       = $this->type;
 			$resDB->address    = $this->address;

@@ -42,6 +42,8 @@ Route::get('/createRes1',function(){
 	return View::make('createRes1');
 });
 
+Route::post('/createRes1','RestaurantController@createRestaurant');
+
 
 	
 Route::post('/searchx','RestaurantController@search');

@@ -32,13 +32,21 @@
 			</p>
 
 			<hr>
-			 <input type="submit" value="Review" href="reviewsRes1" <br>
+
 
 			</div>
 
 
 		</div>
+		<form action="/reviewsRes1" method="get">
+
+			 <input type="submit" value="Review">
+			 </form>
 	</div>
+
+
+
+
 </body>
 
 </html>
