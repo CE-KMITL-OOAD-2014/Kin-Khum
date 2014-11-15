@@ -57,9 +57,6 @@
 		function getStatus(){
 			return $this->status;
 		}
-		function setId($value){
-			$this->id = $value;
-		}
 
 		function setUsername($value){
 			$this->username = $value;

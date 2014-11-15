@@ -12,7 +12,7 @@ class ReviewController extends BaseController{
 			$newReview->setReview(Input::get('review')); 
 			$newReview->setReviewImg(Input::get('reviewImg'));
 			$newReview->setvoteRes(Input::get('voteRes'));
-
+			
 			
 			$file = Input::file('restaurantImg');
 			$newfile = time().".".$file->guessExtension();
