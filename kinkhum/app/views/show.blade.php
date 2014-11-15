@@ -15,7 +15,7 @@
 	<div class="container">
 
 		<div class="page-header">
-			<h1>Restaurant</h1>
+			<h1>Restaurant {{$show->getRestaurant()}}</h1>
 		</div>
 
 
@@ -25,49 +25,14 @@
 
 			<hr>
 
-			<p > <FONT COLOR=#0000FF>{{$show->getRestaurant()}} &nbsp; {{$show->getType()}} &nbsp; {{$show->getDetail()}}<br></FONT>
-				
+			<p>ประเภทของร้านอาหาร :: {{$show->getType()}}<br>
+			ที่อยู่ :: {{$show->getAddress()}}<br>
+			เบอร์ติดต่อ :: {{$show->getTelephone()}}<br>
 				
 			</p>
 
 			<hr>
-
-			<h3>Review <small>Restaurant</small></h3>
-
-			<!-- <form action = "{{ url('res/review') }}"  method="post" enctype="multipart/form-data"> -->
-
-				<form role="form">
-					<div class="form-group">
-
-
-						<label for="Create_reataurant">Detail</label><br>
-						<textarea class="form-control" rows="3" placeholder="detail"></textarea>
-
-						<br>
-						<label class="radio-inline">
-							<input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="1"> 1
-						</label>
-						<label class="radio-inline">
-							<input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="2"> 2
-						</label>
-						<label class="radio-inline">
-							<input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="3"> 3
-						</label>
-
-						<label class="radio-inline">
-							<input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="4"> 4
-						</label>
-
-
-						<label class="radio-inline">
-							<input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="5"> 5
-						</label>
-						<br>
-						<input type="submit" value="create"<br>
-
-					</div>
-				</form>
-
+			 <input type="submit" value="Review" href="reviewsRes1" <br>
 
 			</div>
 
