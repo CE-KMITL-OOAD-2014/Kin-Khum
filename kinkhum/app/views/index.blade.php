@@ -166,7 +166,7 @@
             </div>
         </div>
     </div>
-    <div class="col-xs-6 col-sm-4"><img src="/image/som.jpg" class="img-thumbnail" data-toggle="modal" data-target="#myModal">
+    <div class="col-xs-6 col-sm-4"><img src="/image/som1.jpg" class="img-thumbnail" data-toggle="modal" data-target="#myModal">
         <!-- Modal -->
         <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
             <div class="modal-dialog">
