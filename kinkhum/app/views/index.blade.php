@@ -20,9 +20,9 @@
                 </div>
                 
                 <ul class="nav navbar-nav">
-                    <li><a href="showAll">Restaurant Recommend</a></li>
+                    <li><a href="/showAll">Restaurant Recommend</a></li>
                     
-                    <li><a href="bestRes">Best of Restaurant</a></li>
+                    <li><a href="/bestRes">Best of Restaurant</a></li>
                     
                     
                 </ul>

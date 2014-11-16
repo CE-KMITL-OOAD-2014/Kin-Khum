@@ -23,7 +23,7 @@ class RestaurantController extends BaseController{
 
 			$newRestaurant->save();
 
-			return  View::make('/show');
+			return  Redirect::to("/show/".$newRestaurant->getId());
 	}
 
 

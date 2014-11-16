@@ -81,6 +81,7 @@
 		function save(){
 			$resDB             = new Restaurantdb();
 			//$resDB->id         = $this->id;
+
 			$resDB->restaurant = $this->restaurant;
 			$resDB->type       = $this->type;
 			$resDB->address    = $this->address;
@@ -89,6 +90,9 @@
 			$resDB->image      = $this->image;
 			$resDB->vote       = $this->vote;
 			$resDB->save();
+
+			$this->id = $resDB->id;
+
 		}
 
 

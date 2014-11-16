@@ -21,7 +21,7 @@
 
 		<div container >
 			
-			<img src="...." na class="img-thumbnail" >
+			<img src="/image/{{$show->getImage()}}" na class="img-thumbnail" >
 
 			<hr>
 
