@@ -12,6 +12,9 @@ class RestaurantController extends BaseController{
 			$newRestaurant->setType(Input::get('type')); 
 			$newRestaurant->setAddress(Input::get('address'));
 			$newRestaurant->setTelephone(Input::get('telephone'));
+			$newRestaurant->setImage(Input::get('restaurantImg'));
+
+
 			$file = Input::file('restaurantImg');
 			$newfile = time().".".$file->guessExtension();
 			$newRestaurant->setImage($newfile);
@@ -20,7 +23,7 @@ class RestaurantController extends BaseController{
 
 			$newRestaurant->save();
 
-			echo "Create Success";
+			return  View::make('/show');
 	}
 
 
@@ -51,6 +54,9 @@ class RestaurantController extends BaseController{
 
 		$showAll = new Restaurant();
 		$showRes = $showAll->getAll();
+		$user = new User();
+		/*$userid = $user->getById($id);
+		$userStatus= $user->getStatus();*/
 
 		return View::make('showAll',array('showRes' => $showRes));
 	}

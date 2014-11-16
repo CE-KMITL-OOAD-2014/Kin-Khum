@@ -17,15 +17,14 @@
        					<span class="icon-bar"></span>
        					<span class="icon-bar"></span>
      				 </button>
-     				 <a class="navbar-brand" href="#">KIN KHUM</a>
+     				 <a class="navbar-brand" href="index2">KIN KHUM</a>
                      </div>
      				 
 
 						<ul class="nav navbar-nav">
-  							<li><a href="#">Restaurant Recommend</a></li>
-  							
-  							<li><a href="#">Best of Restaurant</a></li>
-  							<li><a href="#">Promotion</a></li>
+  							<li><a href="/showAll">Restaurant Recommend</a></li>
+  							<li><a href="/bestRes">Best of Restaurant</a></li>
+                <li><a href="#">Create Restaurant</a></li>
                     </ul>
   
 
@@ -38,20 +37,6 @@
 				
 
 			</form>
-
-			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
- 				 <ul class="nav navbar-nav">
-  					<li class="dropdown">
-  					    <a href="dropdown-toggle" data-toggle="dropdown">Type<span class="caret"></span></a>
-
-
-  						<ul class="dropdown-menu" role="menu">
-    						<li><a href="#">Sea Food</a></li>
-  						    <li><a href="#">Sushi</a></li>
-    						<li><a href="#">Ramen</a></li>
-  						</ul>
-  					</li>
-  				</ul>
 
 
   				<nav class="navbar-right">	

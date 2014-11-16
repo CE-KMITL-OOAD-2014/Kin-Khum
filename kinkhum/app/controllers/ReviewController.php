@@ -13,11 +13,14 @@ class ReviewController extends BaseController{
 			$newReview->setReviewImg(Input::get('reviewImg'));
 			$newReview->setvoteRes(Input::get('voteRes'));
 			
-			
+		
+
 			$file = Input::file('restaurantImg');
 			$newfile = time().".".$file->guessExtension();
 			$newReview->setReviewImg($newfile);
 			$file->move(app_path().'/../public/image/',$newfile);
+
+
 
 
 			$newReview->save();

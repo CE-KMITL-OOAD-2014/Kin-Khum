@@ -26,7 +26,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
              </button>
-             <a class="navbar-brand" href="index2">KIN KHUM</a>
+             <a class="navbar-brand" href="/">KIN KHUM</a>
                      </div>
              
 
@@ -38,7 +38,7 @@
                     </ul>
   
       
-      <form action="search" class="navbar-form navbar-left" role="search" method="post">
+      <form action="/search" class="navbar-form navbar-left" role="search" method="post">
         <div class="form-group">
           <input type="text" name="restaurant" class="form-control" placeholder="Search">
         </div>
@@ -47,21 +47,6 @@
 
       </form>
 
-
-
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-         <ul class="nav navbar-nav">
-            <li class="dropdown">
-                <a href="dropdown-toggle" data-toggle="dropdown">Type<span class="caret"></span></a>
-
-
-              <ul class="dropdown-menu" role="menu">
-                <li><a href="#">Sea Food</a></li>
-                  <li><a href="#">Sushi</a></li>
-                <li><a href="#">Ramen</a></li>
-              </ul>
-            </li>
-          </ul>
 
 
           <nav class="navbar-right">  

@@ -14,9 +14,11 @@ Route::get('/',function(){
 	return View::make('index');
 });
 
-Route::get('/index',function(){
-	return View::make('index2');
-});
+// Route::get('/index',function(){
+// 	return View::make('index2');
+// });
+
+
 //Route::get('/','LoginController@loginConnect'); -<------ ตรงนี้ อย่าเอาออก
 
 Route::post('/login','LoginController@login');
