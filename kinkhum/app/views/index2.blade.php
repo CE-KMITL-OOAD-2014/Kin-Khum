@@ -89,7 +89,7 @@
                                     <img class="slide-image" src="86.png" alt="">
                                 </div>
                                 <div class="item">
-                                    <img class="slide-image" src="http://placehold.it/800x300" alt="">
+                                    <img class="slide-image" src="pizz.png" alt="">
                                 </div>
                                 <div class="item">
                                     <img class="slide-image" src="http://placehold.it/800x300" alt="">
