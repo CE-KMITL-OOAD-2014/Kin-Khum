@@ -33,9 +33,9 @@ class RestaurantController extends BaseController{
 
 		    $restaurant = new Restaurant();
 		    $search = $restaurant->search(Input::get('restaurant'));
+		
 
 			return View::make('search',array('search'=>$search));
-		//find::($id);
 		
 	}
 

@@ -14,7 +14,7 @@
 			<div class="panel-body">
 				
 				<div class="clearfix"></div>
-				<img src="/image/{{$show[$i]->getImage()}}" class="img-responsive img-thumbnail pull-right">
+				<img src="/image/{{$restaurant->image}} " class="img-responsive img-thumbnail pull-right">
 				<p style="margin-right: 140;">{{$restaurant->type}}<br>
 				{{$restaurant->address}}<br>
 				{{$restaurant->telephone}}<br>
