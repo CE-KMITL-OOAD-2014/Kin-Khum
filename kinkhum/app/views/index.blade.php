@@ -36,11 +36,16 @@
                     <span class="glyphicon glyphicon-cutlery"></span></button>
                 </form>
                 <nav class="navbar-right">
-                    
-                    <a href="register" class="btn btn-info navbar-btn btn-sm" type="button">
-                    <span class="glyphicon glyphicon-pencil"></span>Sign Up</a>
-                    
-                    <a href="/login"> <button class="btn btn-info navbar-btn btn-sm" data-toggle="modal" data-target=".bs-example-modal-sm"><span class="glyphicon glyphicon-user"></span>Sign in</button></a>
+                    @if (!Auth::check())
+                            <a href="register" class="btn btn-info navbar-btn btn-sm" type="button">
+                            <span class="glyphicon glyphicon-pencil"></span>Sign Up</a>
+                            
+                            <a href="/login"> <button class="btn btn-info navbar-btn btn-sm" data-toggle="modal" data-target=".bs-example-modal-sm"><span class="glyphicon glyphicon-user"></span>Sign in</button></a>
+                    @else
+                        <a href="/logout">
+                                <button class="btn btn-info navbar-btn btn-sm" data-toggle="modal" data-target=".bs-example-modal-sm"><span class="glyphicon glyphicon-user"></span>Sign out</button>
+                        </a>   
+                    @endif
                 </nav>
             </div>
         </div>
@@ -64,7 +69,7 @@
                             <img class="slide-image" src="86.png" alt="">
                         </div>
                         <div class="item ">
-                            <img class="slide-image" src="a.png" alt="">
+                            <img class="slide-image" src="/image/bg3.png" alt="">
                         </div>
                         <div class="item">
                             <img class="slide-image" src="http://placehold.it/800x300" alt="">

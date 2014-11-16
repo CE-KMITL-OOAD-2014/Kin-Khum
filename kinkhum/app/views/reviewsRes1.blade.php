@@ -8,7 +8,7 @@
   <div class="page-header">
     <h1>Review <small>Restaurant</small></h1>
   </div>
-  <form action = "/show/{id}/reviewsRes1"  method="post" enctype="multipart/form-data">
+  <form action = "/show/{{$id}}/reviewsRes1"  method="post" enctype="multipart/form-data">
      <div class="form-group">
 
 

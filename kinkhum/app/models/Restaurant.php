@@ -170,13 +170,10 @@
 		$temp/=$size;
 		$res=RestaurantDB::find($idRestaurant);
 		$res->vote=$temp;
-		$res->save;
+		$res->save();
 
 
 	}
-
-
-
 
 		}
 

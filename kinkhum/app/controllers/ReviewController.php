@@ -29,12 +29,7 @@ class ReviewController extends BaseController{
 	
 
 	}
-	// public function showReview($idReview){
-			
-
-	// 			return  View::make('/show/{id}');
-	// }
-
+	
 }
 
 ?>

@@ -4,7 +4,7 @@
 |--------------------------------------------------------------------------
 | Application Routes
 |--------------------------------------------------------------------------
-|
+|s
 | Here is where you can register all of the routes for an application.
 | It's a breeze. Simply tell Laravel the URIs it should respond to
 | and give it the Closure to execute when that URI is requested.
@@ -18,14 +18,16 @@ Route::get('/',function(){
 // 	return View::make('index2');
 // });
 
-
 //Route::get('/','LoginController@loginConnect'); -<------ ตรงนี้ อย่าเอาออก
 
 Route::post('/login','LoginController@login');
 Route::get('/login',function(){
 	return View::make('loginss');
 });
-//Route::post('/login','LoginController@login');'
+Route::post('/logout',function(){
+	Auth::logout();
+	return Redirect::to("/");
+});
 
 Route::get('/register',function(){
 	return View::make('Register1');
@@ -55,11 +57,11 @@ Route::get('/search',function(){
 
 
 Route::post('show/{id}/reviewsRes1','ReviewController@review');
-
+/*
 Route::get('show/{id}/reviewsRes1',function(){
 	return View::make('reviewsRes1');
 });
-
+*/
 
 Route::post('/uploadImg','RestaurantController@createRestaurant');
 

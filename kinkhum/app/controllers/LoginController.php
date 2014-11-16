@@ -28,7 +28,7 @@
 			$newUser->setName(Input::get('name')); 
 			$newUser->setStatus(Input::get('status'));
 			$newUser->save();
-			return Redirect::to('/index');
+			return Redirect::to('/');
 		}
 
 
@@ -40,8 +40,10 @@
 			$usertry =  array ('username' => $usernameInput,
 								'password'=> $passwordInput);
 		
-			if (Auth::attempt($usertry))return View::make('/index2');
-			else return View::make('/login');
+			if (Auth::attempt($usertry))
+				return Redirect::to("/");
+			else
+				return Redirect::to("/login");
 
 			/*if(Session::get('user','error')=='error'){
 				

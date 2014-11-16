@@ -16,7 +16,7 @@
                 <input type="text" class="form-control" name="address" placeholder="Address"><br>
                 <input type="text" class="form-control" name="telephone" placeholder="Telephone"><br>
 				<textarea class="form-control" name="detail" rows="3"></textarea><br>
-      <input type="file" name="restaurantImg" />
+      <input type="file" require name="restaurantImg" />
 				<input type="submit" value="Submit">
             </div>
 		
