@@ -166,17 +166,17 @@
             </div>
         </div>
     </div>
-    <div class="col-xs-6 col-sm-4"><img src="Grilled-Chicken-Salad.png" class="img-thumbnail" data-toggle="modal" data-target="#myModal">
+    <div class="col-xs-6 col-sm-4"><img src="/image/som.jpg" class="img-thumbnail" data-toggle="modal" data-target="#myModal">
         <!-- Modal -->
         <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                        <h4 class="modal-title" id="myModalLabel">ตำมั่ว</h4>
                     </div>
                     <div class="modal-body">
-                        ....
+                       หนึ่งในสาขา “ตำมั่ว” ซึ่งเป็นสาขาน้องใหม่ที่ตั้งอยู่พระราม9 ซอย51 เข้าซอยเพียง40เมตร ร้านตั้งอยู่ด้านขวามือ สังเกตุง่ายมีป้ายร้าน “ตำมั่ว” อย่างชัดเจน ความพิเศษของที่ “ตำมั่ว” สาขานี้อยู่ที่บรรยากาศร้านอันอบอุ่น ดัดแปลงจากบ้านเก่าที่ทรุดโทรมมาเป็นร้านที่มีสไตล์ ด้านในตกแต่งในสไตล์ Farmer House ดูเรียบง่ายและอบอุ่น หน้าประตูตกแต่งอย่างโดนเด่นด้วยเคาน์เตอร์ส้มตำ นำเสนอแบบชัดๆ ไม่ต้องเดาให้เสียเวลาเลยว่า ร้านนี้ขายอะไร มีโซนที่นั่งด้านในที่เย็นสบายและด้านนอกให้เลือกนั่งได้อย่างตามใจชอบ อาหารที่ “ตำมั่ว” เน้นคือความอร่อยในแบบอีสานพื้นบ้าน แตกต่างอย่าชัดเจนจากร้านส้มตำอื่น ส่งตรงวัตถุดิบจากภาคอีสานสดๆทุกวัน คุณภาพและรสชาติมาตรฐานที่“ตำมั่ว”ควบคุมได้อย่างดี ไม่แปลกเมื่อไปเปิดที่ไหน คนก็จะแน่นร้าน เมนูของ“ตำมั่ว”มีทั้งอาหารทั้งรสจัดและรสไม่จัดสามารถทานได้ทุกวัย จะอิ่มอร่อยพร้อมเพื่อนร่วมงานในยามเที่ยง ทานข้าวเย็นแบบครอบครัว หรือสังสรรค์กับเพื่อนซี้ยามเย็น ก็อร่อยได้อย่างสบายกระเป๋าที่“ตำมั่ว”
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
