@@ -26,7 +26,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
              </button>
-             <a class="navbar-brand" href="#">KIN KHUM</a>
+             <a class="navbar-brand" href="index2">KIN KHUM</a>
                      </div>
              
 
