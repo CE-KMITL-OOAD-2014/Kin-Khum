@@ -87,9 +87,9 @@
     </div>
 </nav>
 <div class="row picture">
-    <div class="col-xs-6 col-sm-4"><img src="/image/ck1.jpg" class="img-thumbnail" data-toggle="modal" data-target="#myModal">
+    <div class="col-xs-6 col-sm-4"><img src="/image/ck1.jpg" class="img-thumbnail" data-toggle="modal" data-target="#myModal1">
         <!-- Modal -->
-        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -145,9 +145,9 @@
             </div>
         </div>
     </div>
-    <div class="col-xs-6 col-sm-4"><img src="/image/1-25501.jpg" class="img-thumbnail" data-toggle="modal" data-target="#myModal">
+    <div class="col-xs-6 col-sm-4"><img src="/image/1-25501.jpg" class="img-thumbnail" data-toggle="modal" data-target="#myModal2">
         <!-- Modal -->
-        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -166,9 +166,9 @@
             </div>
         </div>
     </div>
-    <div class="col-xs-6 col-sm-4"><img src="/image/som.jpg" class="img-thumbnail" data-toggle="modal" data-target="#myModal">
+    <div class="col-xs-6 col-sm-4"><img src="/image/som.jpg" class="img-thumbnail" data-toggle="modal" data-target="#myModal3">
         <!-- Modal -->
-        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -195,24 +195,23 @@
 
         <div class="col-lg-4 col-sm-6 " style="padding-left: 100;">
             <img class="img-circle " src="Sa-Mun-Pai-4_0.png" alt="">
-            <h3>ร้านอาหาร
-                <small>บ้านเรือนไทย</small>
-            </h3>
-            <p>What does this team member to? !</p>
+             <center><h3 style="margin-left: -60;">บ้านเรือนไทย
+            </h3 ></center>
+            <p>สุขุมวิท 39 (ซอบพบมิตร) ถนนสุขุมวิท คลองตันเหนือ , วัฒนา , กรุงเทพมหานคร 10110</p>
         </div>
         <div class="col-lg-4 col-sm-6 " style="padding-left: 100;">
             <img class="img-circle " src="Sinka (2).png" alt="">
-            <h3>John Smith2
-                <small>Job Title</small>
-            </h3>
-            <p>What does this team member to? Keep it short! This is also a great spot for social links!</p>
+             <center><h3 style="margin-left: -60;">Chocolate Ville
+            </h3 ></center>
+
+            <p>ซอยนวมินทร์ 74 แยก 3-8 ถนนเกษตร-นวมินทร์ รามอินทรา , คันนายาว , กรุงเทพมหานคร 10230
+                </p>
         </div>
         <div class="col-lg-4 col-sm-6" style="padding-left: 100;">
             <img class="img-circle " src="Tohkai.png" alt="">
-            <h3>John Smith3
-                <small>Job Title</small>
-            </h3>
-            <p>What does this team member to? Keep it short! This is also a great spot for social links!</p>
+            <center><h3 style="margin-left: -60;">Sushi Masa
+            </h3 ></center>
+            <p>34/68 ซ. ม.ธุรกิจบัณฑิตย์ ถ.ประชาชื่น ทุ่งสองห้อง , หลักสี่ , กรุงเทพมหานคร 10210</p>
         </div>
     </div>
     <div class="row margin-middle">
@@ -220,9 +219,8 @@
         </div>
         <div class="col-lg-4 col-sm-6" style="padding-left: 100;">
             <img class="img-circle " src="http://placehold.it/200x200" alt="">
-            <h3>John Smith1
-                <small>Job Title</small>
-            </h3>
+             <center><h3 style="margin-left: -60;">Retro Steak 
+            </h3 ></center>
             <p>What does this team member to? !</p>
         </div>
         <div class="col-lg-4 col-sm-6" style="padding-left: 100;">
