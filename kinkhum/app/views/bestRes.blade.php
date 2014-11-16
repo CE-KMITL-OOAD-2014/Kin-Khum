@@ -16,7 +16,7 @@
 	   					<div class="panel-body">
 	            
 	             				 <div class="clearfix"></div>
-	             					 <img src="/image/{{$showRes[$i]->getReviewImg()}}" class="img-responsive img-thumbnail pull-right">
+	             					 <img src="/image/{{$showRes[$i]->getImage()}}" class="img-responsive img-thumbnail pull-right">
 	             				 <p style="margin-right: 140;">{{$showRes[$i]->getType()}}<br>
 	             				 								{{$showRes[$i]->getAddress()}}<br>
 	             				 							{{$showRes[$i]->getTelephone()}}<br>
