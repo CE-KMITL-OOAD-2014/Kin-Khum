@@ -18,7 +18,7 @@
 				</div>
 			
 			
-				<center><img src="download.png" class="img-circle"></div></center><br></br>
+				<center><img src="" class="img-circle"></div></center><br></br>
 				
 
  				

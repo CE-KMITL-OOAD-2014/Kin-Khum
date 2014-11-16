@@ -58,7 +58,7 @@
   					
   		
 					<a href="/">	
-					<button class="btn btn-info navbar-btn btn-sm" data-toggle="modal" data-target=".bs-example-modal-sm"><span class="glyphicon glyphicon-user"></span>Sign out</button></a>  
+					<button class="btn btn-info navbar-btn btn-sm" data-toggle="modal" data-target=".bs-example-modal-sm"><span class="glyphicon glyphicon-user"></span>Log out</button></a>  
 					
 					</div>
 

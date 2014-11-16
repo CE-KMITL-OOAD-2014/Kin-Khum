@@ -1,7 +1,4 @@
-@extends('layout')
-@section('body')
-
-<html>
+ <html>
     <head>
         <title>Index</title>
             <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
@@ -10,6 +7,77 @@
             <script type="text/javascript" src="js/bootstrap.min.js"></script>
     </head>
     <body>  
+
+
+        <nav class="navbar navbar-inverse" role="navigation">
+            <div class="container-fluid banner-padding">
+                <div class="navbar-header">
+                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                     </button>
+                     <a class="navbar-brand" href="index2">KIN KHUM</a>
+                     </div>
+                     
+
+                        <ul class="nav navbar-nav">
+                            <li><a href="showAll">Restaurant Recommend</a></li>
+                            
+                            <li><a href="bestRes">Best of Restaurant</a></li>
+                            
+                    </ul>
+  
+           
+            <form action="search" class="navbar-form navbar-left" role="search" method="post">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Search">
+                </div>
+                <button type="submit" class="btn btn-default">
+                <span class="glyphicon glyphicon-cutlery"></span></button>
+                
+
+            </form>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                 <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a href="dropdown-toggle" data-toggle="dropdown">Type<span class="caret"></span></a>
+
+
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">Sea Food</a></li>
+                            <li><a href="#">Sushi</a></li>
+                            <li><a href="#">Ramen</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+
+              <nav class="navbar-right">  
+            
+            <a href="register" class="btn btn-info navbar-btn btn-sm" type="button">
+            <span class="glyphicon glyphicon-pencil"></span>Sign Up</a>
+
+              
+          <a href="/login"> <button class="btn btn-info navbar-btn btn-sm" data-toggle="modal" data-target=".bs-example-modal-sm"><span class="glyphicon glyphicon-user"></span>Sign in</button></a>
+
+          </nav>
+        </div>
+
+    </div>
+
+    </div>
+    </nav>
+            
+            </div>
+
+        </div>
+
+        </div>
+
+
 
 
             <div class="container ">
@@ -181,5 +249,3 @@
 </html>
 
 
-
-  @stop

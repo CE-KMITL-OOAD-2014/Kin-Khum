@@ -26,17 +26,6 @@
 		}
 
 
-		public function register(){
-			$newUser = new User();
-			$newUser->username = Input::get('username');
-			$newUser->name = Input::get('name');
-			$newUser->password = Hash::make(Input::get('password'));
-			$newUser->email = Input::get('email'); 
-			$newUser->status = Input::get('status');
-			$newUser->save();
-			return 'ok';
-		}
-
 		function getUsername(){
 			return $this->username;
 
@@ -74,8 +63,9 @@
 			$this->password = $value;
 		}
 
-		//function get_status(){
-		//	this->
+		function setStatus($value){
+			$this->status = $value;
+		}
 
 		//}
 
@@ -92,13 +82,16 @@
 		function save(){
 			$userDB = new Userdb();
 			$userDB->username  = $this->username;
+			$userDB->name      = $this->name;
 			$userDB->password  = $this->password;
 			$userDB->name      = $this->name;
 			$userDB->status    = $this->status;
+			$userDB->save();
 
 		}
 
-		function getById($id){
+
+	function getById($id){
 			$userDB = Userdb::find($id);
 			$this->username = $userDB->username;
 			$this->password = $userDB->password;

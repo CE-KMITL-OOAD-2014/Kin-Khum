@@ -19,21 +19,16 @@
 			}
 
 		}
-
-//		public function Logout(){
-			
-			
-//		}
-
 		
 		public function register(){
 			$newUser = new User();
-			$newUser->username = Input::get('username');
-			$newUser->password = Hash::make(Input::get('password'));
-			$newUser->name = Input::get('name'); 
-			$newUser->status = Input::get('status');
+
+			$newUser->setUsername(Input::get('username'));
+			$newUser->setPassword (Hash::make(Input::get('password')));
+			$newUser->setName(Input::get('name')); 
+			$newUser->setStatus(Input::get('status'));
 			$newUser->save();
-			return View::make('/index');
+			return Redirect::to('/index');
 		}
 
 
