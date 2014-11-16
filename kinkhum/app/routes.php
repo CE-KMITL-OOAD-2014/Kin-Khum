@@ -10,9 +10,7 @@
 | and give it the Closure to execute when that URI is requested.
 |
 */
-Route::get('/',function(){
-	return View::make('index');
-});
+
 
 // Route::get('/index',function(){
 // 	return View::make('index2');
@@ -80,7 +78,7 @@ Route::post('/res/showall','RestaurantController@showAllRestaurant');
 	return View::make('showAll');
 });*/
 
-Route::get('/showAll','RestaurantController@showAllRestaurant');
+Route::get('/','RestaurantController@showAllRestaurant');
 
 
 Route::get('/bestRes','RestaurantController@setBest');

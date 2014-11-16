@@ -3,7 +3,9 @@
 class RestaurantController extends BaseController{
 
 	public function createRestaurant(){
-
+		if(!Auth::check()){
+			return Redirect::to("/login");
+		}else{
 			$newRestaurant = new Restaurant();
 			//$newId = new Id();
 			$newRestaurant->setRestaurant(Input::get('restaurant'));
@@ -24,6 +26,7 @@ class RestaurantController extends BaseController{
 			$newRestaurant->save();
 
 			return  Redirect::to("/show/".$newRestaurant->getId());
+		}
 	}
 
 

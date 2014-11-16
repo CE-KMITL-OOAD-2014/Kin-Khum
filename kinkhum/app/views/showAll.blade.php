@@ -1,20 +1,5 @@
 @extends('layout')
-@section('body')
-
-	<html>
-			
-		<head>
-			<title>Index</title>
-				<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-				<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css">
-				<script type="text/javascript" src="js/jquery.min.js"></script>
-				<script type="text/javascript" src="js/bootstrap.min.js"></script>
-
-	  	
-	    </head>
-		<body>	
-
-
+@section('body')	
 		<div class="container">
 		<div class="row">
 			<div class="col-md-12"> 
@@ -49,8 +34,4 @@
 			
 				
 		</div>
-
-
-	</body>
-	</html>
 	@stop
