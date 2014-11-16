@@ -166,7 +166,7 @@
             </div>
         </div>
     </div>
-    <div class="col-xs-6 col-sm-4"><img src="/image/som1.jpg" class="img-thumbnail" data-toggle="modal" data-target="#myModal">
+    <div class="col-xs-6 col-sm-4"><img src="/image/AA.jpg" class="img-thumbnail" data-toggle="modal" data-target="#myModal">
         <!-- Modal -->
         <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
             <div class="modal-dialog">
@@ -195,8 +195,8 @@
 
         <div class="col-lg-4 col-sm-6 " style="padding-left: 100;">
             <img class="img-circle " src="Sa-Mun-Pai-4_0.png" alt="">
-            <h3>John Smith1
-                <small>Job Title</small>
+            <h3>ร้านอาหาร
+                <small>บ้านเรือนไทย</small>
             </h3>
             <p>What does this team member to? !</p>
         </div>
