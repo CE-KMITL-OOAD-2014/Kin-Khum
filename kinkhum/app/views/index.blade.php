@@ -221,13 +221,13 @@
             <img class="img-circle " src="http://placehold.it/200x200" alt="">
              <center><h3 style="margin-left: -60;">Retro Steak 
             </h3 ></center>
-            <p>What does this team member to? !</p>
+            <p>ทองหล่อ 13 ถนน สุขุมวิท (อยู่ใน J avenue ฝั่งทองหล่อ 13)</p>
         </div>
         <div class="col-lg-4 col-sm-6" style="padding-left: 100;">
             <img class="img-circle " src="http://placehold.it/200x200" alt="">
-            <h3>John Smith2
-                <small>Job Title</small>
-            </h3>
+            
+              <center><h3 style="margin-left: -60;">White Day Patisserie
+            </h3 ></center>
             <p>What does this team member to? Keep it short! This is also a great spot for social links!</p>
         </div>
         <div class="col-lg-4 col-sm-6" style="padding-left: 100;">
