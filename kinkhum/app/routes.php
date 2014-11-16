@@ -20,11 +20,11 @@ Route::get('/',function(){
 
 //Route::get('/','LoginController@loginConnect'); -<------ ตรงนี้ อย่าเอาออก
 
-Route::post('/login','LoginController@login');
+Route::post('/login','UserController@login');
 Route::get('/login',function(){
 	return View::make('loginss');
 });
-Route::post('/logout',function(){
+Route::get('/logout',function(){
 	Auth::logout();
 	return Redirect::to("/");
 });
@@ -33,7 +33,7 @@ Route::get('/register',function(){
 	return View::make('Register1');
 });
 
-Route::post('/willRegister','LoginController@register');
+Route::post('/willRegister','UserController@register');
 
 //Route::get('/logout',function(){
  //Auth::logout();
