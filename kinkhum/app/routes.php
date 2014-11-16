@@ -45,7 +45,7 @@ Route::get('/createRes1',function(){
 Route::post('/createRes1','RestaurantController@createRestaurant');
 
 	
-Route::post('/searchx','RestaurantController@search');
+Route::post('/search','RestaurantController@search');
 	
 Route::get('/search',function(){
 	return View::make('search');
@@ -77,4 +77,7 @@ Route::post('/res/showall','RestaurantController@showAllRestaurant');
 });*/
 
 Route::get('/showAll','RestaurantController@showAllRestaurant');
+
+
+Route::get('/bestRes','RestaurantController@setBest');
 

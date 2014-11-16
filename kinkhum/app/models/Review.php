@@ -79,6 +79,9 @@
 			$review->voteRes = $this->voteRes;
 			
 			$review->save();
+
+			$res = new Restaurant;
+			$res->calVote($review->idRestaurant);
 		}
 
 

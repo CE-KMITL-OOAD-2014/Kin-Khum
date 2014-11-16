@@ -33,20 +33,21 @@
             <ul class="nav navbar-nav">
                 <li><a href="showAll"  >Restaurant Recommend</a></li>
                 
-                <li><a href="#">Best of Restaurant</a></li>
+                <li><a href="bestRes">Best of Restaurant</a></li>
             
                     </ul>
   
-
-      <form class="navbar-form navbar-left" role="search">
+      
+      <form action="search" class="navbar-form navbar-left" role="search" method="post">
         <div class="form-group">
-          <input type="text" class="form-control" placeholder="Search">
+          <input type="text" name="restaurant" class="form-control" placeholder="Search">
         </div>
-        <button type="submit" class="btn btn-default">
+        <button type="submit"  class="btn btn-default" >
         <span class="glyphicon glyphicon-cutlery"></span></button>
-        
 
       </form>
+
+
 
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
          <ul class="nav navbar-nav">

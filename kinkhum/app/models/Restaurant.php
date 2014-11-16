@@ -155,6 +155,23 @@
 				return  $result;
 			}
 
+		public function calVote($idRestaurant){
+		$newVote = ReviewDB::where('idRestaurant','=',$idRestaurant)->get();
+		$size = count($newVote);
+		$temp = 0;
+		for ($i=0; $i <$size ; $i++) {
+			$temp+= $newVote[$i]->voteRes;
+		# code...
+		}
+		$temp/=$size;
+		$res=RestaurantDB::find($idRestaurant);
+		$res->vote=$temp;
+		$res->save;
+
+
+	}
+
+
 
 
 		}

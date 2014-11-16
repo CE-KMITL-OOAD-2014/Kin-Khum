@@ -55,8 +55,37 @@ class RestaurantController extends BaseController{
 		return View::make('showAll',array('showRes' => $showRes));
 	}
 
+	public function setBest(){
+
+		$newVote = RestaurantDB::where('vote','=',5)->get();
+		$size = count($newVote);
+		if($size>10){
+			$temp =10;
+
+		}
+		else{
+			$temp=$size;
+		}
+		$best = array();
+		for ($i=0; $i <$temp; $i++) {
+			$obj = new Restaurant;
+
+			$obj->setRestaurant($newVote[$i]->restaurant);
+			$obj->setType($newVote[$i]->type);
+			$obj->setAddress($newVote[$i]->address);
+			$obj->setTelephone($newVote[$i]->telephone);
+			$obj->setImage($newVote[$i]->image);
+			$obj->setVote($newVote[$i]->vote);
+			$best[$i] = $obj;
+
+			# code...
+		}
+
+		return View::make('bestRes',array('showRes'=>$best));
+
+	}
+
 } 
 
-	
 
 ?>
