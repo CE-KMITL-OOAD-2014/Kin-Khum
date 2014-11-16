@@ -87,7 +87,7 @@
     </div>
 </nav>
 <div class="row picture">
-    <div class="col-xs-6 col-sm-4"><img src="/image/ck1.png" class="img-thumbnail" data-toggle="modal" data-target="#myModal">
+    <div class="col-xs-6 col-sm-4"><img src="/image/ck1.jpg" class="img-thumbnail" data-toggle="modal" data-target="#myModal">
         <!-- Modal -->
         <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
             <div class="modal-dialog">
@@ -145,7 +145,7 @@
             </div>
         </div>
     </div>
-    <div class="col-xs-6 col-sm-4"><img src="Grilled-Chicken-Salad.png" class="img-thumbnail" data-toggle="modal" data-target="#myModal">
+    <div class="col-xs-6 col-sm-4"><img src="/image/1-25501.jpg" class="img-thumbnail" data-toggle="modal" data-target="#myModal">
         <!-- Modal -->
         <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
             <div class="modal-dialog">
