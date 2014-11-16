@@ -2,7 +2,7 @@
 	/**
 	* 
 	*/
-	class LoginController extends BaseController
+	class UserController extends BaseController
 	{
 		public function loginConnect(){
 			if(Session::get('user','error')=='error'){
